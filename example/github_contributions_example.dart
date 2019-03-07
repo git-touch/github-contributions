@@ -4,7 +4,7 @@ main() async {
   var login = 'pd4d10'; // replace this with GitHub account you want
 
   // get svg string
-  String svg = await getContributionsSvg(login, withoutText: true);
+  String svg = await getContributionsSvg(login);
   print(svg);
 
   // get color and count of this year's contribution
