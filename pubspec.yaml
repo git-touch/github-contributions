@@ -1,6 +1,6 @@
 name: github_contributions
 description: A library to get GitHub users' contributions information, for Dart and Flutter developers
-# version: 1.0.0
+version: 0.1.0
 homepage: https://github.com/pd4d10/github-contributions
 author: Rongjian Zhang <pd4d10@gmail.com>
 
