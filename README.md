@@ -1,22 +1,17 @@
-A library for Dart developers.
-
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+# github_contributions
 
 ## Usage
-
-A simple usage example:
 
 ```dart
 import 'package:github_contributions/github_contributions.dart';
 
-main() {
-  var awesome = new Awesome();
+main() async {
+  var login = 'pd4d10'; // replace this with GitHub account you want
+  String svg = await getContributionsSvg(login, withoutText: true);
+  print(svg);
 }
 ```
 
-## Features and bugs
+## License
 
-Please file feature requests and bugs at the [issue tracker][tracker].
-
-[tracker]: http://example.com/issues/replaceme
+MIT

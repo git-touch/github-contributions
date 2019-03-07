@@ -1,6 +1,7 @@
 import 'package:github_contributions/github_contributions.dart';
 
-main() {
-  var awesome = Awesome();
-  print('awesome: ${awesome.isAwesome}');
+main() async {
+  var login = 'pd4d10'; // replace this with GitHub account you want
+  String svg = await getContributionsSvg(login, withoutText: true);
+  print(svg);
 }
