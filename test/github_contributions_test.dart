@@ -31,41 +31,4 @@ void main() {
       });
     });
   });
-
-  group('get contributions svg', () {
-    String svg;
-
-    setUp(() async {
-      svg = await getContributionsSvg(login);
-    });
-
-    test('has data', () {
-      expect(svg, isNotNull);
-    });
-
-    test('is svg tag', () {
-      expect(svg, startsWith('<svg'));
-      expect(svg, endsWith('</svg>'));
-    });
-    test('has no text tag', () {
-      expect(svg, isNot(contains('</text>')));
-    });
-  });
-
-  group('get contributions svg without text', () {
-    String svg;
-
-    setUp(() async {
-      svg = await getContributionsSvg(login, keepDateText: true);
-    });
-
-    test('has data', () {
-      expect(svg, isNotNull);
-    });
-
-    test('is svg tag', () {
-      expect(svg, startsWith('<svg'));
-      expect(svg, endsWith('</svg>'));
-    });
-  });
 }
