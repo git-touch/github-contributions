@@ -9,7 +9,7 @@ class ContributionsInfo {
 }
 
 Future<List<ContributionsInfo>> getContributions(String login) async {
-  var res = await http.get('https://github.com/$login');
+  var res = await http.get('https://github.com/users/$login/contributions');
   var document = parse(res.body);
   var rectNodes =
       document.querySelector('.js-calendar-graph-svg').querySelectorAll('rect');
