@@ -5,7 +5,7 @@ homepage: https://github.com/pd4d10/github-contributions
 author: Rongjian Zhang <pd4d10@gmail.com>
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.4.0 <3.0.0"
 
 dependencies:
   http: ^0.12.0
